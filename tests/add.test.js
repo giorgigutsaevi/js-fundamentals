@@ -1,4 +1,4 @@
-const add = require('./add.js')
+const add = require('../main/add')
 
 describe('add', () => {
   it('adds 2 and 2', () => {
