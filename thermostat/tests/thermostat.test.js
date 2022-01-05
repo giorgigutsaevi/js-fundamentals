@@ -46,4 +46,12 @@ describe("Thermostat class", () => {
 		expect(test.getTemperature()).toEqual(10);
 	})
 
+	it("has a powerSavingMode attribute, which is enabled by default", () => {
+		expect(test.powerSavingMode).toEqual(true)
+	})
+
+	it("has a setPowerSavingMode()) method, that enables or disables the powerSavingMode", () => {
+		expect(test.setPowerSavingMode(false)).toEqual(false)
+	})
+
 })

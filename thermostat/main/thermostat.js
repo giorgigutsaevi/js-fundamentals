@@ -22,6 +22,10 @@ class Thermostat{
 			this.startTemp -= 1
 		}
 	}
+	setPowerSavingMode(bool){
+		return this.powerSavingMode = bool;
+	}
+
 
 }
 
