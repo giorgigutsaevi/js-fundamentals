@@ -54,4 +54,11 @@ describe("Thermostat class", () => {
 		expect(test.setPowerSavingMode(false)).toEqual(false)
 	})
 
+	it("has a reset() method, that resets temperature to a default temperature of 20", () => {
+		Array.from({length: 5}, (x, i)=>{
+			test.up()
+		})
+		expect(test.reset()).toEqual(20)
+	})
+
 })
