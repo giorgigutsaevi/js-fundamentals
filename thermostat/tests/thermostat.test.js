@@ -19,4 +19,8 @@ describe("Thermostat class", () => {
 		expect(typeof test.getTemperature).toBe("function")
 	})
 
+	it("Initially getTemperature() returns Thermostat's default temp of 20", () => {
+		expect(test.getTemperature()).toEqual(20)
+	})
+
 })
