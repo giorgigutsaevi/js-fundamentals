@@ -1,4 +1,4 @@
-const User = require("../main/classes");
+const User = require("../main/user");
 
 describe('class User', () => {
   it("creates an instance of itself", () => {
