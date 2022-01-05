@@ -50,26 +50,4 @@ class Thermostat{
 
 }
 
-// thermo = new Thermostat();
-// console.log(thermo.getTemperature());
-// console.log(thermo.powerSavingMode);
-// thermo.up()
-// thermo.up()
-// thermo.up()
-// thermo.up()
-// thermo.up()
-// thermo.setPowerSavingMode(false);
-// console.log(thermo.powerSavingMode);
-// thermo.up()
-// thermo.up()
-// thermo.up()
-// thermo.up()
-// thermo.up()
-// thermo.up()
-// thermo.up()
-// thermo.up()
-// thermo.up()
-// console.log(thermo.getTemperature());
-
-
 module.exports = Thermostat;
