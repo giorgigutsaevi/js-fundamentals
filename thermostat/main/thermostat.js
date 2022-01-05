@@ -16,8 +16,8 @@ class Thermostat{
 	up(){
 		if(this.powerSavingMode){
 			this.maximumTemp = 25;
-
 			if(this.startTemp >= this.maximumTemp){
+				console.log('Maximum temperature reached 🥵');
 				return 
 			}else{
 				this.startTemp += 1;
@@ -25,6 +25,7 @@ class Thermostat{
 		}else{
 			this.maximumTemp = 32;
 			if(this.startTemp >= this.maximumTemp){
+				console.log('Maximum temperature reached 🥵');
 				return 
 			}else{
 				this.startTemp += 1;
@@ -34,6 +35,7 @@ class Thermostat{
 
 	down(){
 		if(this.startTemp <= this.minimumTemp){
+			console.log('Minimum temperature reached 🥶');
 			return
 		}else{
 			this.startTemp -= 1
