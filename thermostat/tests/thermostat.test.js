@@ -2,8 +2,12 @@
 const Thermostat = require("../main/thermostat")
 
 describe("Thermostat class", () => {
-	it("creates an instance of itself", ()=>{
+
+	beforeEach(()=>{
 		test = new Thermostat();
+	})
+
+	it("creates an instance of itself", ()=>{
 		expect(test).toBeInstanceOf(Thermostat)
 	})
 })
