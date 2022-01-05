@@ -23,4 +23,18 @@ describe("Thermostat class", () => {
 		expect(test.getTemperature()).toEqual(20)
 	})
 
+	it("has an up() method, that increases temperature by 1", () => {
+		Array.from({length: 5}, (x, i)=>{
+			test.up()
+		})
+		expect(test.getTemperature()).toEqual(25)
+	})
+
+	it("has a down() method, that decreases temperature by 1", () => {
+		Array.from({length: 5}, (x, i)=>{
+			test.down()
+		})
+		expect(test.getTemperature()).toEqual(15)
+	})
+
 })
