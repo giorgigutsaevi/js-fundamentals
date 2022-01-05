@@ -5,6 +5,8 @@ class Thermostat{
 		this.startTemp = 20;
 		this.powerSavingMode = true;
 		this.minimumTemp = 10;
+		this.maximumTemp = 25;
+
 	}
 
 	getTemperature(){
@@ -12,7 +14,22 @@ class Thermostat{
 	}
 
 	up(){
-		return this.startTemp += 1
+		if(this.powerSavingMode){
+			this.maximumTemp = 25;
+
+			if(this.startTemp >= this.maximumTemp){
+				return 
+			}else{
+				this.startTemp += 1;
+			}
+		}else{
+			this.maximumTemp = 32;
+			if(this.startTemp >= this.maximumTemp){
+				return 
+			}else{
+				this.startTemp += 1;
+			}
+		}
 	}
 
 	down(){
@@ -32,5 +49,27 @@ class Thermostat{
 
 
 }
+
+// thermo = new Thermostat();
+// console.log(thermo.getTemperature());
+// console.log(thermo.powerSavingMode);
+// thermo.up()
+// thermo.up()
+// thermo.up()
+// thermo.up()
+// thermo.up()
+// thermo.setPowerSavingMode(false);
+// console.log(thermo.powerSavingMode);
+// thermo.up()
+// thermo.up()
+// thermo.up()
+// thermo.up()
+// thermo.up()
+// thermo.up()
+// thermo.up()
+// thermo.up()
+// thermo.up()
+// console.log(thermo.getTemperature());
+
 
 module.exports = Thermostat;

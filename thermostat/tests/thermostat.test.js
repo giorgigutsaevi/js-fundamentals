@@ -61,4 +61,22 @@ describe("Thermostat class", () => {
 		expect(test.reset()).toEqual(20)
 	})
 
+	it("powerSavingMode dictates what max temperature thermostat can reach (with PSM ON, it's 25 degrees)", () => {
+		// Starting temp is 20, and by default PSM is on, so if I iterate 10 more times, my thermo temp should not exceed 25
+		Array.from({length: 10}, (x, i)=>{
+			test.up()
+		})
+		expect(test.getTemperature()).toEqual(25)
+	})
+
+	it("powerSavingMode dictates what max temperature thermostat can reach (with PSM OFF, it's 32 degrees)", () => {
+		// Starting temp is 20, and with PSM OFF, so if I iterate 20 more times, my thermo temp should not exceed 32 degrees
+		test.setPowerSavingMode(false)
+		Array.from({length: 20}, (x, i)=>{
+			test.up()
+		})
+		expect(test.getTemperature()).toEqual(32)
+	})
+
+
 })
