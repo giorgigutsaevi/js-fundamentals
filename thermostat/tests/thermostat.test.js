@@ -37,4 +37,13 @@ describe("Thermostat class", () => {
 		expect(test.getTemperature()).toEqual(15)
 	})
 
+	it("has a minimum possible temperature of 10 degrees", ()=>{
+		// I'm iterating down() 15 times, technically it should yield a temp of 5 degrees
+		// But because of the if block 'guard clause' it won't go below 10
+		Array.from({length: 15}, (x, i)=>{
+			test.down()
+		});
+		expect(test.getTemperature()).toEqual(10);
+	})
+
 })
