@@ -78,5 +78,8 @@ describe("Thermostat class", () => {
 		expect(test.getTemperature()).toEqual(32)
 	})
 
+	it("has a currentEnergyUsage() method, that returns current level of energy usage", () => {
+		expect(test.currentEnergyUsage()).toEqual('medium-usage')
+	})
 
 })

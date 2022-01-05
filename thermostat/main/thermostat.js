@@ -47,7 +47,18 @@ class Thermostat{
 		return this.startTemp = 20;
 	}
 
-
+	currentEnergyUsage(){
+		if(this.startTemp < 18){
+			return 'low-usage'
+		}else if(18 <= this.startTemp && this.startTemp <= 25){
+			return 'medium-usage'
+		}else{
+			return 'high-usage'
+		}
+	}
 }
 
+
 module.exports = Thermostat;
+
+
