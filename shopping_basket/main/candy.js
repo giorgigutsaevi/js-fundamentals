@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 
 class Candy{
 	constructor(candyName, price){

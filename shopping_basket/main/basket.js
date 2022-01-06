@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 
 const Candy = require("../main/candy")
 
@@ -17,4 +19,5 @@ class ShoppingBasket{
 
 }
 
+module.exports = ShoppingBasket;
 module.exports = ShoppingBasket;

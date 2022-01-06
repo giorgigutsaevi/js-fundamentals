@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 
 const ShoppingBasket = require("../main/basket");
 const Candy = require("../main/candy");

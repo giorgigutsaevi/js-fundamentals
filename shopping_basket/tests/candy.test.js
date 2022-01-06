@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const Candy = require("../main/candy")
 
 describe("Candy object", () => {
