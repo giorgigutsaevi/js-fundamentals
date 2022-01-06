@@ -1,0 +1,17 @@
+{
+  "name": "calling_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "github.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.7"
+  }
+
+}
