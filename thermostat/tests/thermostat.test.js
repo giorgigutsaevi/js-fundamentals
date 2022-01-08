@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
 
-const Thermostat = require("../main/thermostat")
+// const Thermostat = require("../main/thermostat")
+import Thermostat from "../main/thermostat"
 
 describe("Thermostat class", () => {
 

@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-
 
 class Thermostat{
 
@@ -62,7 +60,5 @@ class Thermostat{
 	}
 }
 
-
-module.exports = Thermostat;
-
+export default Thermostat;
 
